@@ -6,3 +6,7 @@ add_subdirectory(src)
 if (IS_DIRECTORY "${CMAKE_CURRENT_LIST_DIR}/report")
 	add_subdirectory(report)
 endif()
+
+add_custom_target(degit
+	${CMAKE_COMMAND} -E rm -rf .git report/.git
+)
