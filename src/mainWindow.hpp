@@ -21,8 +21,6 @@ class MainWindow: public QMainWindow {
 public:
 	MainWindow(QWidget* parent = nullptr, Qt::WindowFlags flags = Qt::WindowFlags());
 
-	~MainWindow();
-
 private slots:
 	void solve();
 

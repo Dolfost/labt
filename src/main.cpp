@@ -11,3 +11,7 @@ int main(int argc, char *argv[]) {
 
 	return app.exec();
 }
+
+void MainWindow::solve() {
+
+}
