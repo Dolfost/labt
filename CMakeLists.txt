@@ -8,5 +8,7 @@ if (IS_DIRECTORY "${CMAKE_CURRENT_LIST_DIR}/report")
 endif()
 
 add_custom_target(degit
-	${CMAKE_COMMAND} -E rm -rf .git report/.git
+	${CMAKE_COMMAND} -E rm -rf 
+		${CMAKE_CURRENT_LIST_DIR}/.git 
+		${CMAKE_CURRENT_LIST_DIR}/report/.git
 )
