@@ -26,13 +26,13 @@ private slots:
 
 private:
 	QVBoxLayout* m_lay = new QVBoxLayout;
-	QWidget* m_centralWidget = new QWidget;
+	QWidget* m_central_widget = new QWidget;
 
-	exprtk::symbol_table<double> m_fSymbols;
-	exprtk::expression<double> m_fExpression;
+	exprtk::symbol_table<double> m_f_symbols;
+	exprtk::expression<double> m_f_expression;
 	double x, y;
 
-	QPushButton* m_solveButton = new QPushButton("Розʼвязати");
+	QPushButton* m_solve_button = new QPushButton("Розʼвязати");
 	QTextEdit* m_text = new QTextEdit;
 };
 
