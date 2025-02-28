@@ -18,6 +18,11 @@ MainWindow::MainWindow(
 	auto inputLay = new QHBoxLayout;
 	m_lay->addLayout(inputLay);
 	inputLay->setContentsMargins(10,5,10,5);
+
+	connect(
+		m_solve_button, &QPushButton::pressed,
+		this, &MainWindow::solve
+	);
 }
 
 void MainWindow::solve() {
