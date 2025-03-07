@@ -2,7 +2,9 @@ cmake_minimum_required(VERSION 3.25)
 
 project(lab)
 
+if (EXISTS "${CMAKE_CURRENT_LIST_DIR}/src/CMakeLists.txt")
 add_subdirectory(src)
+endif()
 if (IS_DIRECTORY "${CMAKE_CURRENT_LIST_DIR}/report")
 	add_subdirectory(report)
 endif()
